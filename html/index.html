@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="design.css">
+<script src="code.js"></script>
+
+</head>
+<body class="back">
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a onclick='lw("docker images");'>View Images</a>
+  <a onclick='lw1("Enter the image name, tag and the command to run:");'>Start a Container</a>
+  <a onclick='lw1("Enter the name of the container to delete:");'>Stop a Container</a>
+  <a onclick='lw("docker ps");'>Running Containers</a>
+  <a onclick='lw("docker ps -a");'>All containers</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Docker Menu</button>
+  <img src="docker.png" class="header">
+  <img src="https://killbill.io/wp-content/uploads/2014/11/docker1.png" class="logo">
+  </br>
+  <pre class="boxed" id='p1'>Welcome, this is your console.
+To use precreated commands, click on the Docker Menu button above.
+To use custom command write your code below.</pre>
+
+  <p class="outp" id="o1">Write your code here: </p> <input id='in1'>
+  
+  <button onclick='lw();'> Click</button>
+
+</div>
+   
+</body>
+</html> 
